@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<DocumentJournal uuid="237672fe-8a8d-44f9-912f-a99dab4ef9d6">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ТорговыеДокументы" category="Selection">
+				<xr:TypeId>b2b9425f-b789-45a2-a1d4-6366442cf5e8</xr:TypeId>
+				<xr:ValueId>b9da2422-a633-4738-93be-910ac2a849ce</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ТорговыеДокументы" category="List">
+				<xr:TypeId>cdecd568-56ff-4893-a827-db8916413fd2</xr:TypeId>
+				<xr:ValueId>fadd1dc7-daf8-451a-8272-cba78cbddc9f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ТорговыеДокументы" category="Manager">
+				<xr:TypeId>390111de-ff62-4c1d-b56c-ea581c4af54d</xr:TypeId>
+				<xr:ValueId>0acbb9cb-351a-4517-8d18-f956dd547558</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТорговыеДокументы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Торговые документы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТовара</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="e4a89961-9363-4b37-8e36-7415039b28cd">
+				<Properties>
+					<Name>Клиент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказКлиента.Attribute.Клиент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТовара.Attribute.Клиент</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>
